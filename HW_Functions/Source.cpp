@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 int Factorial(int n);
@@ -10,9 +10,9 @@ void main()
 	setlocale(LC_ALL, "");
 
 	int n, m;
-	cout << "Ââåäèòå ÷èñëî: "; cin >> n; cout << "Ââåäèòå ñòåïåíü: "; cin >> m;
-	cout << "Ôàêòîðèàë ÷èñëà " << n << " ðàâåí " << Factorial(n) << endl;
-	cout << "×èñëî: " << n << " â ñòåïåíè: "<< m << " ðàâíî " << Power(n, m) << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: "; cin >> n; cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ: "; cin >> m;
+	cout << "Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ñ‡Ð¸ÑÐ»Ð° " << n << " Ñ€Ð°Ð²ÐµÐ½ " << Factorial(n) << endl;
+	cout << "Ð§Ð¸ÑÐ»Ð¾: " << n << " Ð² ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸: "<< m << " Ñ€Ð°Ð²Ð½Ð¾ " << Power(n, m) << endl;
 
 
 	
