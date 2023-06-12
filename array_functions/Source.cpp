@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 #define endlx2 << endl << endl;
 
@@ -21,7 +21,7 @@ void main()
 
 	FillRand(arr, n);
 	cout << endl;
-	cout << "Ñëó÷àéíûå ÷èñëà:";
+	cout << "Ð¡Ð»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ðµ Ñ‡Ð¸ÑÐ»Ð°:";
 	cout endlx2;
 	Print(arr, n);
 	cout endlx2;
@@ -30,7 +30,7 @@ void main()
 
 	Sort(arr, n);
 	cout << endl;
-	cout << "Ñîðòèðîâêà:";
+	cout << "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°:";
 	cout endlx2;
 	for (int i = 0; i < n; i++)
 	{
@@ -40,13 +40,13 @@ void main()
 	
 	cout endlx2;
 	
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà : " << Summ(arr,n) endlx2;
-	cout << "Ñðåäíåå-àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà : " << Summ(arr,n)/n endlx2;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå â ìàññèâå: " << MaxValueIn(arr, n) endlx2;
-	cout << "Ìèíèìàëüíîå çíà÷åíèå â ìàññèâå: " << MinValueIn(arr, n) endlx2;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð° : " << Summ(arr,n) endlx2;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ-Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð° : " << Summ(arr,n)/n endlx2;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ: " << MaxValueIn(arr, n) endlx2;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ: " << MinValueIn(arr, n) endlx2;
 
 	int number_of_shift;
-	cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ: "; cin >> number_of_shift;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð²: "; cin >> number_of_shift;
 	ShiftLeft(arr, n, number_of_shift);
 	
 	Print(arr, n);
