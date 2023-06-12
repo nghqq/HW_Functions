@@ -10,9 +10,11 @@ void main()
 	setlocale(LC_ALL, "");
 
 	int n, m;
-	cout << "Введите число: "; cin >> n; cout << "Введите степень: "; cin >> m;
+	cout << "Введите число: "; cin >> n;
 	cout << "Факториал числа " << n << " равен " << Factorial(n) << endl;
-	cout << "Число: " << n << " в степени: "<< m << " равно " << Power(n, m) << endl;
+	
+	cout << "Введите число: "; cin >> n; cout << "Введите степень: "; cin >> m;
+	cout << "Число  " << n << " в степени " << m << " равно " << Power(n, m) << endl;
 
 
 	
