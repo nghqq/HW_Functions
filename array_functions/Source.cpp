@@ -41,7 +41,7 @@ void main()
 	cout endlx2;
 	
 	cout << "Сумма элементов массива : " << Summ(arr,n) endlx2;
-	cout << "Среднее-арифметическое элементов массива : " << Summ(arr,n)/n endlx2;
+	cout << "Среднее-арифметическое элементов массива : " << (double)Summ(arr,n)/n endlx2;
 	cout << "Максимальное значение в массиве: " << MaxValueIn(arr, n) endlx2;
 	cout << "Минимальное значение в массиве: " << MinValueIn(arr, n) endlx2;
 
