@@ -47,6 +47,7 @@ void main()
 
 	int number_of_shift;
 	cout << "Введите количество сдвигов: "; cin >> number_of_shift;
+	cout << endl;
 	ShiftLeft(arr, n, number_of_shift);
 	
 	Print(arr, n);
@@ -56,6 +57,7 @@ void main()
 	ShiftRight(arr, n, number_of_shift);
 	ShiftRight(arr, n, number_of_shift);
 	Print(arr, n);
+	cout << endl;
 	
 	
 	
