@@ -5,121 +5,69 @@ using namespace std;
 void main()
 {
 	setlocale(LC_ALL, "");
-	int const n = 10;
-	int arr[n]{};
-
-
-
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % 33;
-	}
-	cout << "Случайные числа:";
-	cout endlx2;
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << "\t";
-	}
-	cout  endlx2;
-
-	for (int step = n / 2; step > 0; step /= 2)
-	{
-		for (int i = step; i < n; i++)
-		{
-			for (int j = i - step; j >= 0 && arr[j] > arr[j + step]; j -= step)
-			{
-				int buff = arr[j];
-				arr[j] = arr[j + step];
-				arr[j + step] = buff;
-			}
-		}
-	}
-	cout << "Сортировка:";
-	cout endlx2;
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << "\t";
-
-	}
-	cout endlx2;
-	int max = arr[0];
-	for ( int i = 0; i <n; i++)
-	{
-		if (arr[i] > max) 
-		{
-			max = arr[i];
-		}
-	}
-		cout << "Максимальное число в массиве: ";
-		cout << max;
-
-	cout endlx2;
-	int min = arr[0];
-	for (int i = 0; i < n; i++)
-	{
-		if (arr[i] < min)
-		{
-			max = arr[i];
-		}
-	}
-	cout << "Минимальное число в массиве: ";
-	cout << min;
-	cout endlx2;
-
-	int summ = 0;
-	for (int i = 0; i < n; i++)
-	{
-		summ += arr[i];
-	}
-	cout << "Сумма элементов массива : " << summ endlx2;
-	cout << "Среднее-арифметическое элементов массива : " << summ / n endlx2;
-
+	int const ROWS = 3;
+	int const COLS = 4;
+	int darr[ROWS][COLS]{};
 	int number_of_shift;
-	cout << "Введите количество сдвигов: "; cin >> number_of_shift;
-	for (int i = 0; i < number_of_shift; i++)
+	cin >> number_of_shift;
+
+
+	for (int i = 0; i < ROWS; i++)
 	{
-		int buffer = arr[0];
-		for (int i = 0; i < n; i++)
+		for (int j = 0; j < COLS; j++)
 		{
-
-			arr[i] = arr[i + 1];
+			darr[i][j] = rand() % 9;
 		}
+		cout << endl;
 
-		arr[n - 1] = buffer;
 	}
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < ROWS; i++)
 	{
-		cout << arr[i] << "\t";
-	}
-	cout endlx2;
-
-
-	for (int i = 0; i < number_of_shift; i++)
-	{
-		int buffer = arr[n - 1];
-		for (int i = n - 2; i >= 0; i--)
+		for (int j = 0; j < COLS; j++)
 		{
-
-			arr[i + 1] = arr[i];
+			cout << darr[i][j] << "\t";
 		}
+		cout << endl;
 
-		arr[0] = buffer;
 	}
-	for (int i = 0; i < number_of_shift; i++)
-	{
-		int buffer = arr[n - 1];
-		for (int i = n - 2; i >= 0; i--)
+	cout << endl;
+
+	
+		for (int i = 0; i < number_of_shift; i++)
 		{
+			double buffer = darr[i][0];
+			for (int i = 0; i < ROWS; i++)
+			{
 
-			arr[i + 1] = arr[i];
+				darr[i][0] = darr[i + 1][0];
+			}
+
+			darr[ROWS - 1][COLS-1] = buffer;
 		}
+		for (int i = 0; i < ROWS; i++)
+		{
+			for (int j = 0; j < COLS; j++)
+			{
+				cout << darr[i][j] << "\t";
+			}
+			cout << endl;
 
-		arr[0] = buffer;
-	}
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << "\t";
-	}
-
-
+		}
+	
 }
+
+
+	
+	
+
+	
+
+	
+
+	
+			
+			
+	
+
+	
+		
