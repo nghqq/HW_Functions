@@ -7,7 +7,7 @@
 #include "Shift.h"
 
 
-void main()
+/*void main()
 {
 	setlocale(LC_ALL, "");
 
@@ -201,12 +201,10 @@ void main()
 	cout << endl;
 	cout << delimiter;
 
-	
-
-
 
 
 }
+*/
 
 
 
