@@ -8,7 +8,7 @@
 
 
 
-void main()
+/*void main()
 {
 	setlocale(LC_ALL, "");
 
@@ -237,15 +237,7 @@ void main()
 	std::cout << std::endl;
 	std::cout << delimiter;
 
-
-	
-	
-
-
-
-
-
-}
+}*/
 
 
 
